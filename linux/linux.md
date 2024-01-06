@@ -127,4 +127,17 @@ que tengo lo mismo y el mismo nombre pero que cambie su extencion con .bak para 
 ## Anadir repositorios de terceros
 
 
+## Formatear una memoria en linux
 
+PRIMERO VAMOS A LISTAR LOS DISPOSITIVOS CONECTADOS CON EL SIGUENTE COMAND: `lsblk`. Una vez listados vamos a desmontar el sistema de ficheros que tengo el 
+dispositivo que querermos formatear y para eso ocupamos el siguente comando:
+```bash
+sudo umount /dev/{elnombreDeTuDispositivo}
+```
+Normalmente todos los dispositivos conectados estan ubicados en /dev. A continuacion tendremos que montar otro sistema de ficheros que en este caso sera fat32 
+
+```bash
+sudo mkfs.vfat -F 32 -n {nombreQueLeVayasADar} /dev/{nombreDispositivo}
+```
+mkfs significa makefilesystem y vfat es para especificar el formato que es fat y ya despues la bandera -F 32 significa que sera FAT32 y -n es para darle el 
+nombre a la memoria
