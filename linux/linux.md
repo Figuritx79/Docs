@@ -143,7 +143,20 @@ mkfs significa makefilesystem y vfat es para especificar el formato que es fat y
 nombre a la memoria
 
 ## Trabajar con php en linux
-Instalar lo siguiente:
+Instalar primero php:
 ```bash
 ❯ sudo apt install php php-cli php-common php-curl php-json php-mbstring php-mysql php-xml php-gd                                                           ─╯
 ```
+
+Segundo instalar el composer con curl:
+
+```bash
+curl -sS https://getcomposer.org/installer  -o compose.php
+
+```
+Tercero ejecutar el script que nombramos compose.php
+
+```bash
+sudo php compose.php --install-dir="/usr/local/bin" --filename="composer"
+```
+Ejecutamos el script y especificamos en donde lo vamos a tener ubicado con `install-dir`y como se va a llamar con el `filename` en este caso se llama composer`
