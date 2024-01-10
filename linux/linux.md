@@ -52,13 +52,14 @@ Este paquete nos da sugerencias en la terminal, este plugin ya esta agregado en 
 ```bash
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
-Ya por ultimo necesitas instalr lsd y bat, esto debiado a que zsh no reconoce lsni cat, estos dos son alternativas **"mejores"** y se instalan de la siguiente manera.
-```bash 
 
-sudo apt install lsd bat 
+Ya por ultimo necesitas instalr lsd y bat, esto debiado a que zsh no reconoce lsni cat, estos dos son alternativas **"mejores"** y se instalan de la siguiente manera.
+
+```bash
+
+sudo apt install lsd bat
 
 ```
-
 
 ### PowerLevel10k zsh
 
@@ -106,44 +107,50 @@ Ya que hicimos lo anterior, salimos del usuario root y volvemos a entrar y listo
 
 Tambien si queremos podemos anadir mas configuracion en el archivo `.p10k.zsh` que se encuentra en el usuario root. Recomiendo anadir un icon de **_nerdfonts_** para el usuario root, para esto buscamos `ROOT_TEMPLATE` y anadimos el iconito
 
-## Anadir repositorios de terceros y cambiar los repositorios por defecto 
+## Anadir repositorios de terceros y cambiar los repositorios por defecto
 
 Primero debemos saber en donde podemos modificar los repositorios de donde descargamos software y este se encuetra el la siguiente ruta: `/etc/apt/`. Dentro
 tendremos diferentes ficheros y directorios, los que a nosotros nos interesan son el fichero `sources.list` y el directorio `sources.list.d/`.
 
 #### Cambiar repo por defecto
-Primero lo que haremos es modificar el `sources.list` y lo haremos para cambiar los repositorios que tiene por defecto, estos repositorios 
-llegan a estar incompletos o aputan hacia los repositorios del cd de instalacion, asi que los vamos a cambiar por los de la siguiente url(los que estan en esta url funcionan de manera diferente) 
-<a href="https://gist.github.com/hakerdefo/5e1f51fa93ff37871b9ff738b05ba30f">debian bookworm repository(asi lo buscamos en internet)</a>. Una vez dentro de la url 
-copiaremos lo primero que nos aparece y lo pegaremos en el `sources.list` y antes de hacer esto comentaremos los otros repositorios que no nos interesan 
+
+Primero lo que haremos es modificar el `sources.list` y lo haremos para cambiar los repositorios que tiene por defecto, estos repositorios
+llegan a estar incompletos o aputan hacia los repositorios del cd de instalacion, asi que los vamos a cambiar por los de la siguiente url(los que estan en esta url funcionan de manera diferente)
+<a href="https://gist.github.com/hakerdefo/5e1f51fa93ff37871b9ff738b05ba30f">debian bookworm repository(asi lo buscamos en internet)</a>. Una vez dentro de la url
+copiaremos lo primero que nos aparece y lo pegaremos en el `sources.list` y antes de hacer esto comentaremos los otros repositorios que no nos interesan
 para que no de conflicto. Una vez hecho esto usaremos el siguiente comando para actualizar nuestra lista de repositorios:
+
 ```bash
 sudo apt update
 ```
+
 Con esto hecho ya habremos cambiado los repositorios. Tambien seria recomendable tener un resplado de nuestro `sources.list` y lo hacemos creando un fichero
 que tengo lo mismo y el mismo nombre pero que cambie su extencion con .bak para que el sistema no lo lea y solo lo tengamos para respaldo.
 
-
 ## Anadir repositorios de terceros
-
 
 ## Formatear una memoria en linux
 
-PRIMERO VAMOS A LISTAR LOS DISPOSITIVOS CONECTADOS CON EL SIGUENTE COMAND: `lsblk`. Una vez listados vamos a desmontar el sistema de ficheros que tengo el 
+PRIMERO VAMOS A LISTAR LOS DISPOSITIVOS CONECTADOS CON EL SIGUENTE COMAND: `lsblk`. Una vez listados vamos a desmontar el sistema de ficheros que tengo el
 dispositivo que querermos formatear y para eso ocupamos el siguente comando:
+
 ```bash
 sudo umount /dev/{elnombreDeTuDispositivo}
 ```
-Normalmente todos los dispositivos conectados estan ubicados en /dev. A continuacion tendremos que montar otro sistema de ficheros que en este caso sera fat32 
+
+Normalmente todos los dispositivos conectados estan ubicados en /dev. A continuacion tendremos que montar otro sistema de ficheros que en este caso sera fat32
 
 ```bash
 sudo mkfs.vfat -F 32 -n {nombreQueLeVayasADar} /dev/{nombreDispositivo}
 ```
-mkfs significa makefilesystem y vfat es para especificar el formato que es fat y ya despues la bandera -F 32 significa que sera FAT32 y -n es para darle el 
+
+mkfs significa makefilesystem y vfat es para especificar el formato que es fat y ya despues la bandera -F 32 significa que sera FAT32 y -n es para darle el
 nombre a la memoria
 
 ## Trabajar con php en linux
+
 Instalar primero php:
+
 ```bash
 ❯ sudo apt install php php-cli php-common php-curl php-json php-mbstring php-mysql php-xml php-gd                                                           ─╯
 ```
@@ -154,9 +161,40 @@ Segundo instalar el composer con curl:
 curl -sS https://getcomposer.org/installer  -o compose.php
 
 ```
+
 Tercero ejecutar el script que nombramos compose.php
 
 ```bash
 sudo php compose.php --install-dir="/usr/local/bin" --filename="composer"
 ```
+
 Ejecutamos el script y especificamos en donde lo vamos a tener ubicado con `install-dir`y como se va a llamar con el `filename` en este caso se llama composer`
+
+## Instalar mysql
+
+Primero tendriamos que agregar el repositorio de mysql y eso e hace buscando `mysql apt` pero te paso el link
+<a href="https://dev.mysql.com/downloads/repo/apt/">Aqui esta el .deb que nos da el repositorio</a> y despues de que tengamos el .deb lo instalamos con el siguiente comando:
+
+```bash
+sudo dpkg -i {.debMysql}
+```
+
+Recomiendo que te guies por la documentacion de mysql para que no tengas problemas<a href='https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install'>Aca esta</a>, una vez instalado el .deb tenemos que actualizar la lista de repositorios con el siguiente comando:
+
+```bash
+sudo apt update
+```
+
+Una vez actualizada la lista de repositorios tenemos que instalar mysql con el siguiente comando:
+
+```bash
+sudo apt install mysql-server
+```
+
+Mysql es un daemon y si quieres lo puedes deshabilitar con el siguiente comando:
+
+```bash
+sudo systemctl disable mysql
+# Y cuando lo quieras ocupar lo habilitas con el siguiente comando
+sudo systemctl start mysql
+```
