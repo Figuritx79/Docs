@@ -141,3 +141,9 @@ sudo mkfs.vfat -F 32 -n {nombreQueLeVayasADar} /dev/{nombreDispositivo}
 ```
 mkfs significa makefilesystem y vfat es para especificar el formato que es fat y ya despues la bandera -F 32 significa que sera FAT32 y -n es para darle el 
 nombre a la memoria
+
+## Trabajar con php en linux
+Instalar lo siguiente:
+```bash
+❯ sudo apt install php php-cli php-common php-curl php-json php-mbstring php-mysql php-xml php-gd                                                           ─╯
+```
