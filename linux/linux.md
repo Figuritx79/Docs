@@ -1,5 +1,16 @@
 # Curso de Linux
 
+### Comandos
+* * * * * * * * Listar las redes wifi cercanas
+```bash
+nmcli dev wifi 
+```
+* Listar las fuentes del sistema 
+```bash
+fc-list
+```
+
+
 ### Instalar zsh y "configurarlo"
 
 Primero tenemos que instalar zsh
