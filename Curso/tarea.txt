@@ -1,0 +1,33 @@
+ONDAS ULTRASONICAS 
+Las ondas ultrasónicas son ondas de sonido con una frecuencia superior a la capacidad de audición del oído humano, es decir, por encima de los 20 kHz. Las aplicaciones científicas y tecnológicas de las ondas ultrasónicas son amplias y diversas, y aquí se presentan algunas de ellas:
+
+Diagnóstico médico: Las ondas ultrasónicas se utilizan para la obtención de imágenes en diagnósticos médicos como ecografías, mamografías y tomografías. Estas imágenes permiten visualizar el interior del cuerpo humano y detectar problemas médicos.
+
+Limpieza y procesamiento de materiales: Las ondas ultrasónicas se utilizan en la limpieza de piezas y componentes electrónicos, en la eliminación de partículas en procesos industriales, en la separación de líquidos y sólidos en la producción de alimentos, en la extracción de aceites esenciales y en la síntesis de materiales.
+
+Investigación de materiales: Las ondas ultrasónicas se utilizan en la caracterización de materiales y en la investigación de sus propiedades mecánicas, como la elasticidad, la densidad y la porosidad.
+
+Tratamiento médico: Las ondas ultrasónicas se utilizan en terapias médicas para tratar diversas afecciones, como la rotura de tejidos, la eliminación de tumores y la desintegración de cálculos renales.
+
+Pruebas no destructivas: Las ondas ultrasónicas se utilizan en la detección de grietas, poros y otros defectos en materiales y estructuras sin dañarlos.
+
+Medición de distancia: Las ondas ultrasónicas se utilizan en la medición de distancias, como en los sensores de aparcamiento de los automóviles.
+
+En general, el impacto de las ondas ultrasónicas en la sociedad ha sido positivo al mejorar la calidad de vida de las personas, facilitar el diagnóstico y tratamiento de enfermedades, y mejorar la eficiencia y seguridad en la industria y la manufactura
+
+
+ONDAS INFRASONICAS 
+
+Las ondas infrasónicas son ondas de sonido con frecuencias inferiores a los 20 Hz, es decir, por debajo del umbral de audición humana. Aunque su detección por el oído humano es difícil, tienen una amplia variedad de aplicaciones científicas y tecnológicas, y aquí se presentan algunas de ellas:
+
+Estudio de terremotos y tsunamis: Las ondas infrasónicas se utilizan para estudiar los terremotos y tsunamis, ya que son capaces de detectar las ondas sísmicas y acústicas generadas por estos fenómenos naturales.
+
+Vigilancia y seguridad: Las ondas infrasónicas se utilizan para la detección de explosiones, armas y otros dispositivos peligrosos. Además, se utilizan en la vigilancia de fronteras y en la detección de intrusos.
+
+Monitoreo de infraestructuras: Las ondas infrasónicas se utilizan para monitorear la integridad de infraestructuras críticas, como puentes, presas y edificios, ya que pueden detectar la presencia de grietas, fracturas y otros problemas estructurales.
+
+Medición de la velocidad del viento: Las ondas infrasónicas se utilizan para medir la velocidad del viento en la atmósfera, ya que pueden ser detectadas a largas distancias y no se ven afectadas por la presencia de obstáculos.
+
+Investigación geofísica: Las ondas infrasónicas se utilizan en la investigación geofísica para estudiar la estructura interna de la Tierra y detectar la actividad volcánica.
+
+En general, el impacto de las ondas infrasónicas en la sociedad ha sido positivo al mejorar la seguridad y protección de las personas, prevenir fallas en infraestructuras críticas, mejorar la comprensión de nuestro planeta y mejorar la precisión de la predicción del clima y la seguridad en la navegación aérea.
